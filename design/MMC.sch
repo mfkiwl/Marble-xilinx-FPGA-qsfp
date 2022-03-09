@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 11 25
 Title "Marble"
-Date "2019-01-16"
-Rev "9"
+Date "2022-02-03"
+Rev "v1.2"
 Comp "Michał Gąska / WUT"
 Comment1 ""
 Comment2 ""
@@ -558,7 +558,7 @@ F 13 "750mA" H 6150 490 60  0001 L CNN "Power"
 F 14 " " H 6150 400 60  0001 L CNN "Status"
 F 15 "Medium Power AF Schottky Diode" H 6150 310 60  0001 L CNN "Part Description"
 F 16 "INFINEON" H 6150 220 60  0001 L CNN "Manufacturer"
-F 17 "BAT165AX" H 6150 130 60  0001 L CNN "Manufacturer Part Number"
+F 17 "BAT165AX or BAT165E6327HTSA1" H 6150 130 60  0001 L CNN "Manufacturer Part Number"
 F 18 "2" H 6150 40  60  0001 L CNN "Pin Count"
 F 19 "SOD323" H 6150 -50 60  0001 L CNN "Case"
 F 20 "Yes" H 6150 -140 60  0001 L CNN "Mounted"
@@ -1902,7 +1902,7 @@ F 18 "0.025R" H 9500 -470 60  0001 L CNN "Resistance"
 F 19 "±25%" H 9500 -560 60  0001 L CNN "Tolerance"
 F 20 "SMD EMIFIL Suppression Chip Ferrite Bead" H 9500 -650 60  0001 L CNN "Part Description"
 F 21 "MURATA" H 9500 -740 60  0001 L CNN "Manufacturer"
-F 22 "BLM18SG121TN1D" H 9500 -830 60  0001 L CNN "Manufacturer Part Number"
+F 22 "BLM18SG121TN1D or BLM18SG121TZ1D" H 9500 -830 60  0001 L CNN "Manufacturer Part Number"
 F 23 "0603" H 9500 -920 60  0001 L CNN "Case"
 F 24 "Yes" H 9500 -1010 60  0001 L CNN "Mounted"
 F 25 "No" H 9500 -1100 60  0001 L CNN "Socket"
@@ -3590,7 +3590,6 @@ NoConn ~ 8650 4400
 NoConn ~ 6850 4300
 NoConn ~ 6850 4200
 NoConn ~ 6850 4000
-NoConn ~ 6850 3900
 NoConn ~ 8650 3100
 NoConn ~ 8650 3000
 NoConn ~ 8650 2600
@@ -3628,6 +3627,10 @@ Text HLabel 10500 5700 2    50   Input ~ 10
 XRP_POWER_GOOD
 Wire Wire Line
 	10500 5700 8650 5700
+Text HLabel 5450 3900 0    50   Output ~ 10
+I2C_FPGA_SW_RST
+Wire Wire Line
+	6850 3900 5450 3900
 Wire Bus Line
 	9350 3500 9350 3700
 Wire Bus Line

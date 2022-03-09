@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 16 25
 Title "Marble"
-Date "2019-01-16"
-Rev "9"
+Date "2022-02-03"
+Rev "v1.2"
 Comp "Michał Gąska / WUT"
 Comment1 ""
 Comment2 ""
@@ -15,24 +15,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 4200 5950 2    50   Input ~ 10
 FPGA_RESETn
-$Sheet
-S 2350 5050 1500 2000
-U 5C417BCB
-F0 "FPGA_PWR&MISC" 50
-F1 "FPGA_PWR&MISC.sch" 50
-F2 "DXP_0" O R 3850 5200 50 
-F3 "DXN_0" O R 3850 5300 50 
-F4 "FPGA_TDI" I R 3850 5500 50 
-F5 "FPGA_TDO" O R 3850 5600 50 
-F6 "FPGA_TMS" I R 3850 5700 50 
-F7 "FPGA_TCK" I R 3850 5800 50 
-F8 "FPGA_RESETn" I R 3850 5950 50 
-F9 "FPGA_DONE" O R 3850 6100 50 
-F10 "CCLK" O R 3850 6300 50 
-F11 "BOOT_MODE[0..2]" I R 3850 6450 50 
-F12 "PROG_B" I R 3850 6650 50 
-F13 "XRP_POWER_GOOD" I R 3850 6850 50 
-$EndSheet
 Wire Wire Line
 	3850 5950 4200 5950
 Text HLabel 4200 5500 2    50   Input ~ 10
@@ -157,6 +139,7 @@ F16 "FPGA_XR_GPIO_0" O R 11450 2250 50
 F17 "EXP_INT" I R 11450 2350 50 
 F18 "FPGA_INT" I R 11450 2450 50 
 F19 "I2C_FPGA_SW_RST" O R 11450 2550 50 
+F20 "I2C_Repeaters_RST" O R 11450 4000 50 
 $EndSheet
 Text HLabel 1750 2050 0    50   BiDi ~ 10
 DDR3_CK_P
@@ -636,11 +619,9 @@ Wire Wire Line
 Wire Wire Line
 	9550 2100 9950 2100
 Text HLabel 8850 9350 2    50   Input ~ 10
-EN_CON_JTAG
+EN_CON_JTAG_R
 Text HLabel 8850 9450 2    50   Input ~ 10
 EN_USB_JTAG
-Wire Wire Line
-	8850 9450 8400 9450
 $Comp
 L Analog_&_Interface:PCA9555AHF U39
 U 1 1 5D0D4F3C
@@ -660,7 +641,7 @@ F 11 "QFN,0.50mm pitch,square;6 pin X 6 pin,4.10mm X 4.10mm body (w/thermal tab 
 F 12 " " H 7400 5780 60  0001 L CNN "Status"
 F 13 "Low-Voltage 16-Bit I2C-bus I/O Port With Interrupt and Weak Pull-Up" H 7400 5690 60  0001 L CNN "Part Description"
 F 14 "NXP SEMICONDUCTORS" H 7400 5600 60  0001 L CNN "Manufacturer"
-F 15 "PCA9555AHF,128" H 7400 5510 60  0001 L CNN "Manufacturer Part Number"
+F 15 "PCA9555AHF,128 or PCAL9555AHF,128 or CAT9555HV6 or CAT9555HT6" H 7400 5510 60  0001 L CNN "Manufacturer Part Number"
 F 16 "25" H 7400 5420 60  0001 L CNN "Pin Count"
 F 17 "QFN24" H 7400 5330 60  0001 L CNN "Case"
 F 18 "Yes" H 7400 5240 60  0001 L CNN "Mounted"
@@ -708,7 +689,7 @@ F 11 "QFN,0.50mm pitch,square;6 pin X 6 pin,4.10mm X 4.10mm body (w/thermal tab 
 F 12 " " H 2650 5780 60  0001 L CNN "Status"
 F 13 "Low-Voltage 16-Bit I2C-bus I/O Port With Interrupt and Weak Pull-Up" H 2650 5690 60  0001 L CNN "Part Description"
 F 14 "NXP SEMICONDUCTORS" H 2650 5600 60  0001 L CNN "Manufacturer"
-F 15 "PCA9555AHF,128" H 2650 5510 60  0001 L CNN "Manufacturer Part Number"
+F 15 "PCA9555AHF,128 or PCAL9555AHF,128 or CAT9555HV6 or CAT9555HT6" H 2650 5510 60  0001 L CNN "Manufacturer Part Number"
 F 16 "25" H 2650 5420 60  0001 L CNN "Pin Count"
 F 17 "QFN24" H 2650 5330 60  0001 L CNN "Case"
 F 18 "Yes" H 2650 5240 60  0001 L CNN "Mounted"
@@ -1042,8 +1023,6 @@ Wire Wire Line
 	8400 9150 8850 9150
 Wire Wire Line
 	8400 9250 8850 9250
-Wire Wire Line
-	8400 9350 8850 9350
 Wire Wire Line
 	2250 9450 2450 9450
 Wire Wire Line
@@ -1952,7 +1931,6 @@ Wire Wire Line
 	13000 8250 13000 8450
 Wire Wire Line
 	13200 7950 13000 7950
-NoConn ~ 12900 8650
 Text Label 13900 8350 2    50   ~ 10
 I2C_APP_3V3_SDA
 Text Label 13900 8450 2    50   ~ 10
@@ -2017,4 +1995,143 @@ Wire Wire Line
 	5900 5450 7000 5450
 Wire Wire Line
 	4200 6850 3850 6850
+$Sheet
+S 2350 5050 1500 2000
+U 5C417BCB
+F0 "FPGA_PWR&MISC" 50
+F1 "FPGA_PWR&MISC.sch" 50
+F2 "DXP_0" O R 3850 5200 50 
+F3 "DXN_0" O R 3850 5300 50 
+F4 "FPGA_TDI" I R 3850 5500 50 
+F5 "FPGA_TDO" O R 3850 5600 50 
+F6 "FPGA_TMS" I R 3850 5700 50 
+F7 "FPGA_TCK" I R 3850 5800 50 
+F8 "FPGA_RESETn" I R 3850 5950 50 
+F9 "FPGA_DONE" O R 3850 6100 50 
+F10 "CCLK" O R 3850 6300 50 
+F11 "BOOT_MODE[0..2]" I R 3850 6450 50 
+F12 "PROG_B" I R 3850 6650 50 
+F13 "XRP_POWER_GOOD" I R 3850 6850 50 
+F14 "I2C_Repeaters_RST" I R 3850 7000 50 
+$EndSheet
+Text Label 4650 7000 2    50   ~ 10
+I2C_Repeaters_RST
+Wire Wire Line
+	4650 7000 3850 7000
+Text Label 13650 8650 2    50   ~ 10
+I2C_Repeaters_RST
+Wire Wire Line
+	13650 8650 12900 8650
+Text Label 12250 4000 2    50   ~ 10
+I2C_Repeaters_RST
+Wire Wire Line
+	12250 4000 11450 4000
+$Comp
+L Resistors_SMD:R0402_1K_1%_0.0625W_100PPM R?
+U 1 1 625E070A
+P 8775 9350
+AR Path="/5C16BF8E/5DB9B7E6/625E070A" Ref="R?"  Part="1" 
+AR Path="/5C907554/625E070A" Ref="R72"  Part="1" 
+F 0 "R72" H 9025 9325 50  0000 L CNN
+F 1 "R0402_1K_1%_0.0625W_100PPM" H 8775 9140 60  0001 L CNN
+F 2 "RESC1005X40N" H 8775 8330 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 8775 8960 60  0001 L CNN
+F 4 "1k" H 8725 9425 50  0000 L CNN "~"
+F 5 "R0402_1K_1%_0.0625W_100PPM" H 8775 8870 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 8775 8780 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 8775 8690 60  0001 L CNN "Library Path"
+F 8 "=Value" H 8775 8600 60  0001 L CNN "Comment"
+F 9 "Standard" H 8775 8510 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 8775 8420 60  0001 L CNN "Component Type"
+F 11 " " H 8775 8240 60  0001 L CNN "PackageDescription"
+F 12 "2" H 8775 8150 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 8775 8060 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 8775 7970 60  0001 L CNN "Footprint Ref"
+F 15 "1k" H 8775 7880 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 8775 7790 60  0001 L CNN "Status"
+F 17 "0.0625W" H 8775 7700 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 8775 7610 60  0001 L CNN "TC"
+F 19 " " H 8775 7520 60  0001 L CNN "Voltage"
+F 20 "±1%" H 8775 7430 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 8775 7340 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 8775 7250 60  0001 L CNN "Manufacturer"
+F 23 "R0402_1K_1%_0.0625W_100PPM" H 8775 7160 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 8775 7070 60  0001 L CNN "Case"
+F 25 "No" H 8775 6980 60  0001 L CNN "PressFit"
+F 26 "Yes" H 8775 6890 60  0001 L CNN "Mounted"
+F 27 " " H 8775 6800 60  0001 L CNN "Sense Comment"
+F 28 "No" H 8775 6710 60  0001 L CNN "Sense"
+F 29 " " H 8775 6620 60  0001 L CNN "Status Comment"
+F 30 "No" H 8775 6530 60  0001 L CNN "Socket"
+F 31 "Yes" H 8775 6440 60  0001 L CNN "SMD"
+F 32 " " H 8775 6350 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 8775 6260 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671002L" H 8775 6170 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 8775 6080 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 8775 5900 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 8775 5810 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 8775 5720 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 8775 5630 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8775 5540 60  0001 L CNN "License"
+	1    8775 9350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Resistors_SMD:R0402_1K_1%_0.0625W_100PPM R?
+U 1 1 625F25A2
+P 8775 9450
+AR Path="/5C16BF8E/5DB9B7E6/625F25A2" Ref="R?"  Part="1" 
+AR Path="/5C907554/625F25A2" Ref="R73"  Part="1" 
+F 0 "R73" H 9025 9425 50  0000 L CNN
+F 1 "R0402_1K_1%_0.0625W_100PPM" H 8775 9240 60  0001 L CNN
+F 2 "RESC1005X40N" H 8775 8430 60  0001 L CNN
+F 3 "\\\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\R0402_Phycomp_RC0402.pdf" H 8775 9060 60  0001 L CNN
+F 4 "1k" H 8725 9325 50  0000 L CNN "~"
+F 5 "R0402_1K_1%_0.0625W_100PPM" H 8775 8970 60  0001 L CNN "Part Number"
+F 6 "Resistor - 1%" H 8775 8880 60  0001 L CNN "Library Ref"
+F 7 "SchLib\\Resistors.SchLib" H 8775 8790 60  0001 L CNN "Library Path"
+F 8 "=Value" H 8775 8700 60  0001 L CNN "Comment"
+F 9 "Standard" H 8775 8610 60  0001 L CNN "Component Kind"
+F 10 "Standard" H 8775 8520 60  0001 L CNN "Component Type"
+F 11 " " H 8775 8340 60  0001 L CNN "PackageDescription"
+F 12 "2" H 8775 8250 60  0001 L CNN "Pin Count"
+F 13 "PcbLib\\Resistors SMD.PcbLib" H 8775 8160 60  0001 L CNN "Footprint Path"
+F 14 "RESC1005X40N" H 8775 8070 60  0001 L CNN "Footprint Ref"
+F 15 "1k" H 8775 7980 60  0001 L CNN "Val"
+F 16 "Not Recommended" H 8775 7890 60  0001 L CNN "Status"
+F 17 "0.0625W" H 8775 7800 60  0001 L CNN "Power"
+F 18 "±100ppm/°C" H 8775 7710 60  0001 L CNN "TC"
+F 19 " " H 8775 7620 60  0001 L CNN "Voltage"
+F 20 "±1%" H 8775 7530 60  0001 L CNN "Tolerance"
+F 21 "General Purpose Thick Film Chip Resistor" H 8775 7440 60  0001 L CNN "Part Description"
+F 22 "GENERIC" H 8775 7350 60  0001 L CNN "Manufacturer"
+F 23 "R0402_1K_1%_0.0625W_100PPM" H 8775 7260 60  0001 L CNN "Manufacturer Part Number"
+F 24 "0402" H 8775 7170 60  0001 L CNN "Case"
+F 25 "No" H 8775 7080 60  0001 L CNN "PressFit"
+F 26 "Yes" H 8775 6990 60  0001 L CNN "Mounted"
+F 27 " " H 8775 6900 60  0001 L CNN "Sense Comment"
+F 28 "No" H 8775 6810 60  0001 L CNN "Sense"
+F 29 " " H 8775 6720 60  0001 L CNN "Status Comment"
+F 30 "No" H 8775 6630 60  0001 L CNN "Socket"
+F 31 "Yes" H 8775 6540 60  0001 L CNN "SMD"
+F 32 " " H 8775 6450 60  0001 L CNN "ComponentHeight"
+F 33 "YAGEO PHYCOMP" H 8775 6360 60  0001 L CNN "Manufacturer1 Example"
+F 34 "232270671002L" H 8775 6270 60  0001 L CNN "Manufacturer1 Part Number"
+F 35 "0.4mm" H 8775 6180 60  0001 L CNN "Manufacturer1 ComponentHeight"
+F 36 "CERN DEM JLC" H 8775 6000 60  0001 L CNN "Author"
+F 37 "12/03/07 00:00:00" H 8775 5910 60  0001 L CNN "CreateDate"
+F 38 "10/17/12 00:00:00" H 8775 5820 60  0001 L CNN "LatestRevisionDate"
+F 39 "Resistors SMD" H 8775 5730 60  0001 L CNN "Library Name"
+F 40 "This work is licensed under the Creative Commons CC-BY-SA 4.0 License. To the extent that circuit schematics that use Licensed Material can be considered to be ‘Adapted Material’, then the copyright holder waives article 3.b of the license with respect to these schematics." H 8775 5640 60  0001 L CNN "License"
+	1    8775 9450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8775 9350 8850 9350
+Wire Wire Line
+	8775 9450 8850 9450
+Wire Wire Line
+	8400 9350 8475 9350
+Wire Wire Line
+	8400 9450 8475 9450
 $EndSCHEMATC

@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 25
+Sheet 21 25
 Title "Marble"
-Date "2019-01-16"
-Rev "9"
+Date "2022-02-03"
+Rev "v1.2"
 Comp "Michał Gąska / WUT"
 Comment1 ""
 Comment2 ""
@@ -204,7 +204,7 @@ F 1 "XC7K160T-2FFG676C" H 2750 3226 50  0000 C CNN
 F 2 "ICs And Semiconductors SMD_BGA:BGA676C100P26X26_2700X2700X260" H 2750 1950 50  0001 C CNN
 F 3 "" H 2750 1950 50  0000 C CNN
 F 4 "XILINX" H 2750 1950 50  0001 C CNN "Manufacturer"
-F 5 "XC7K160T-2FFG676C" H 2750 1950 50  0001 C CNN "Manufacturer Part Number"
+F 5 "XC7K160T-2FFG676C or XC7K160T-3FFG676E" H 2750 1950 50  0001 C CNN "Manufacturer Part Number"
 	5    2750 1950
 	1    0    0    -1  
 $EndComp

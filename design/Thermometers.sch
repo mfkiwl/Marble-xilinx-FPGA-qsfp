@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 25
 Title "Marble"
-Date "2019-01-16"
-Rev "9"
+Date "2022-02-03"
+Rev "v1.2"
 Comp "Michał Gąska / WUT"
 Comment1 ""
 Comment2 ""
@@ -376,7 +376,7 @@ F 0 "Q7" H 6906 5796 50  0000 L CNN
 F 1 "STS8DN6LF6AG" H 6906 5705 50  0000 L CNN
 F 2 "ICs And Semiconductors SMD:SOIC127P600X175-8N" H 6900 5675 50  0001 L CIN
 F 3 "www.st.com/resource/en/datasheet/CD00001537.pdf" H 6700 5750 50  0001 L CNN
-F 4 "STS8DN6LF6AG" H 6700 5750 50  0001 C CNN "Manufacturer Part Number"
+F 4 "STS8DN6LF6AG or SQ4920EY-T1_BE3" H 6700 5750 50  0001 C CNN "Manufacturer Part Number"
 F 5 "ST MICROELECTRONICS" H 6700 5750 50  0001 C CNN "Manufacturer"
 	1    6700 5750
 	1    0    0    -1  
@@ -389,7 +389,7 @@ F 0 "Q7" H 8506 5796 50  0000 L CNN
 F 1 "STS8DN6LF6AG" H 8506 5705 50  0000 L CNN
 F 2 "ICs And Semiconductors SMD:SOIC127P600X175-8N" H 8500 5675 50  0001 L CIN
 F 3 "www.st.com/resource/en/datasheet/CD00001537.pdf" H 8300 5750 50  0001 L CNN
-F 4 "STS8DN6LF6AG" H 8300 5750 50  0001 C CNN "Manufacturer Part Number"
+F 4 "STS8DN6LF6AG or SQ4920EY-T1_BE3" H 8300 5750 50  0001 C CNN "Manufacturer Part Number"
 F 5 "ST MICROELECTRONICS" H 8300 5750 50  0001 C CNN "Manufacturer"
 	2    8300 5750
 	1    0    0    -1  
@@ -542,29 +542,12 @@ Connection ~ 4400 5900
 Wire Wire Line
 	4600 6000 4050 6000
 Connection ~ 4600 6000
-$Comp
-L power:+3.3P #PWR?
-U 1 1 5D5D3DE2
-P 4200 4750
-AR Path="/5C16C03C/5D5D3DE2" Ref="#PWR?"  Part="1" 
-AR Path="/5BCEDA39/5D5D3DE2" Ref="#PWR?"  Part="1" 
-AR Path="/5D05A99E/5D5D3DE2" Ref="#PWR0506"  Part="1" 
-AR Path="/5C16BF8E/5D5D3DE2" Ref="#PWR0506"  Part="1" 
-AR Path="/5D5D3DE2" Ref="#PWR0506"  Part="1" 
-F 0 "#PWR0506" H 4200 4600 50  0001 C CNN
-F 1 "+3.3P" H 4200 4900 50  0000 C CNN
-F 2 "" H 4200 4750 50  0001 C CNN
-F 3 "" H 4200 4750 50  0001 C CNN
-	1    4200 4750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 4750 4200 4800
 Wire Wire Line
 	4600 4800 4600 4750
 Wire Wire Line
 	4600 4750 4400 4750
-Connection ~ 4200 4750
 Wire Wire Line
 	4400 4800 4400 4750
 Connection ~ 4400 4750
@@ -1577,4 +1560,21 @@ F 5 "SWR25X-NRTC-S03-ST-BA" H 6800 5150 50  0001 C CNN "Manufacturer Part Number
 	1    6800 5150
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 623D0F3C
+P 4200 4750
+AR Path="/5BD32060/623D0F3C" Ref="#PWR?"  Part="1" 
+AR Path="/5C907554/5C417BCB/623D0F3C" Ref="#PWR?"  Part="1" 
+AR Path="/5C907554/623D0F3C" Ref="#PWR?"  Part="1" 
+AR Path="/5C907554/5CAAC367/623D0F3C" Ref="#PWR?"  Part="1" 
+AR Path="/5D05A99E/623D0F3C" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 4200 4600 50  0001 C CNN
+F 1 "+3V3" H 4215 4923 50  0000 C CNN
+F 2 "" H 4200 4750 50  0001 C CNN
+F 3 "" H 4200 4750 50  0001 C CNN
+	1    4200 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 4750
 $EndSCHEMATC
