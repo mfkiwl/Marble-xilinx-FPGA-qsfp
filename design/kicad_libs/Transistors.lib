@@ -135,25 +135,25 @@ X B 5 0 0 90 R 0 0 2 1 P
 ENDDRAW
 ENDDEF
 #
-# BSS138LT1G
+# BSS138L
 #
-DEF BSS138LT1G T 0 50 Y Y 1 L N
+DEF BSS138L T 0 50 Y Y 1 L N
 F0 "T" 150 200 50 H V R CNN
-F1 "BSS138LT1G" 0 -295 50 H I L CNN
+F1 "BSS138L" 0 -295 50 H I L CNN
 F2 "ICs And Semiconductors SMD:SOT95P240X110-3N" 0 -370 50 H I L CNN
 F3 " " 0 -445 50 H I L CNN
-F4 "BSS138LT1G" 0 -520 50 H I L CNN "Part Number"
+F4 "BSS138L" 0 -520 50 H I L CNN "Part Number"
 F5 "N-MOSFET-D 1G 2S 3D" 0 -595 50 H I L CNN "Library Ref"
 F6 "SchLib\\Transistors.SchLib" 0 -670 50 H I L CNN "Library Path"
-F7 "BSS138LT1G" 0 -745 50 H I L CNN "Comment"
+F7 "BSS138L" 0 -745 50 H I L CNN "Comment"
 F8 "Standard" 0 -820 50 H I L CNN "Component Kind"
 F9 "Standard" 0 -895 50 H I L CNN "Component Type"
-F10 "BSS138LT1G" 0 -970 50 H I L CNN "Device"
+F10 "BSS138L" 0 -970 50 H I L CNN "Device"
 F11 "SOT23 3-Leads, Pitch 0.95mm - Body 1.4x3mm, IPC Medium Density" 0 -1045 50 H I L CNN "PackageDescription"
 F12 " " 0 -1120 50 H I L CNN "Status"
 F13 "50V 200mA N-Channel Enhancement Mode Field-Effect Transistor" 0 -1195 50 H I L CNN "Part Description"
-F14 "ON SEMICONDUCTOR" 0 -1270 50 H I L CNN "Manufacturer"
-F15 "BSS138LT1G" 0 -1345 50 H I L CNN "Manufacturer Part Number"
+F14 "ONSEMI" 0 -1270 50 H I L CNN "Manufacturer"
+F15 "BSS138L" 0 -1345 50 H I L CNN "Manufacturer Part Number"
 F16 "3" 0 -1420 50 H I L CNN "Pin Count"
 F17 "SOT23-3" 0 -1495 50 H I L CNN "Case"
 F18 "Yes" 0 -1570 50 H I L CNN "Mounted"
@@ -320,11 +320,11 @@ X S1D2 9 600 -400 200 L 60 0 0 1 P
 ENDDRAW
 ENDDEF
 #
-# NX3008NBKV
+# SI1036X
 #
-DEF NX3008NBKV Q 0 40 Y Y 2 F N
+DEF SI1036X Q 0 40 Y Y 2 F N
 F0 "Q" 0 0 50 H V C CNN
-F1 "NX3008NBKV" -50 -100 50 H V C CNN
+F1 "SI1036X" -50 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -374,25 +374,25 @@ X G 5 100 -300 100 R 0 0 2 1 P
 ENDDRAW
 ENDDEF
 #
-# SI4425DDY-T1-GE3
+# SI4459BDY-T1-GE3
 #
-DEF SI4425DDY-T1-GE3 T 0 50 Y Y 1 L N
+DEF SI4459BDY-T1-GE3 T 0 50 Y Y 1 L N
 F0 "T" 550 -250 50 V V C CNN
-F1 "SI4425DDY-T1-GE3" 0 -845 50 H I L CNN
+F1 "SI4459BDY-T1-GE3" 0 -845 50 H I L CNN
 F2 "ICs And Semiconductors SMD:SOIC127P600X175-8N" 0 -920 50 H I L CNN
 F3 " " 0 -995 50 H I L CNN
-F4 "SI4425DDY-T1-GE3" 0 -1070 50 H I L CNN "Part Number"
-F5 "SI4425DDY" 0 -1145 50 H I L CNN "Library Ref"
+F4 "SI4459BDY-T1-GE3" 0 -1070 50 H I L CNN "Part Number"
+F5 "SI4459BDY" 0 -1145 50 H I L CNN "Library Ref"
 F6 "SchLib\\Transistors.SchLib" 0 -1220 50 H I L CNN "Library Path"
-F7 "SI4425DDY-T1-GE3" 0 -1295 50 H I L CNN "Comment"
+F7 "SI4459BDY-T1-GE3" 0 -1295 50 H I L CNN "Comment"
 F8 "Standard" 0 -1370 50 H I L CNN "Component Kind"
 F9 "Standard" 0 -1445 50 H I L CNN "Component Type"
-F10 "SI4425DDY-T1-GE3" 0 -1520 50 H I L CNN "Device"
+F10 "SI4459BDY-T1-GE3" 0 -1520 50 H I L CNN "Device"
 F11 "SOIC 8, Pitch 1.27mm - Body 4x5mm, IPC Medium Density" 0 -1595 50 H I L CNN "PackageDescription"
 F12 " " 0 -1670 50 H I L CNN "Status"
-F13 "-30V -19.7A P-Channel MOSFET" 0 -1745 50 H I L CNN "Part Description"
+F13 "-30V -20A P-Channel MOSFET" 0 -1745 50 H I L CNN "Part Description"
 F14 "VISHAY SILICONIX" 0 -1820 50 H I L CNN "Manufacturer"
-F15 "SI4425DDY-T1-GE3" 0 -1895 50 H I L CNN "Manufacturer Part Number"
+F15 "SI4459BDY-T1-GE3" 0 -1895 50 H I L CNN "Manufacturer Part Number"
 F16 "8" 0 -1970 50 H I L CNN "Pin Count"
 F17 "SOIC8" 0 -2045 50 H I L CNN "Case"
 F18 "Yes" 0 -2120 50 H I L CNN "Mounted"

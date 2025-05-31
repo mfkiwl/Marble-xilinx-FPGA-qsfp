@@ -104,25 +104,25 @@ X DVDD 6 1400 -800 200 L 60 60 2 1 W
 ENDDRAW
 ENDDEF
 #
-# AD5662BRMZ-1
+# DAC8550IDGK
 #
-DEF AD5662BRMZ-1 IC 0 50 Y Y 1 L N
+DEF DAC8550IDGK IC 0 50 Y Y 1 L N
 F0 "IC" 350 50 50 H V C CNN
-F1 "AD5662BRMZ-1" 0 -775 50 H I L CNN
+F1 "DAC8550IDGK" 0 -775 50 H I L CNN
 F2 "ICs And Semiconductors SMD:SOP65P490X110-8N" 0 -850 50 H I L CNN
 F3 " " 0 -925 50 H I L CNN
-F4 "AD5662BRMZ-1" 0 -1000 50 H I L CNN "Part Number"
-F5 "AD5662" 0 -1075 50 H I L CNN "Library Ref"
+F4 "DAC8550IDGK" 0 -1000 50 H I L CNN "Part Number"
+F5 "DAC8550" 0 -1075 50 H I L CNN "Library Ref"
 F6 "SchLib\\Analog & Interface.SchLib" 0 -1150 50 H I L CNN "Library Path"
-F7 "AD5662BRMZ-1" 0 -1225 50 H I L CNN "Comment"
+F7 "DAC8550IDGK" 0 -1225 50 H I L CNN "Comment"
 F8 "Standard" 0 -1300 50 H I L CNN "Component Kind"
 F9 "Standard" 0 -1375 50 H I L CNN "Component Type"
-F10 "AD5662BRMZ-1" 0 -1450 50 H I L CNN "Device"
+F10 "DAC8550IDGK" 0 -1450 50 H I L CNN "Device"
 F11 "SOP, 0.65mm, Pitch; 8 Pin, 3.0mm W X 3.0mm L X 1.10mm H Body, IPC Medium Density" 0 -1525 50 H I L CNN "PackageDescription"
 F12 " " 0 -1600 50 H I L CNN "Status"
 F13 "2.7V to 5.5V, 250uA, Rail-to-Rail Output 16-Bit nanoDAC" 0 -1675 50 H I L CNN "Part Description"
-F14 "ANALOG DEVICES" 0 -1750 50 H I L CNN "Manufacturer"
-F15 "AD5662BRMZ-1" 0 -1825 50 H I L CNN "Manufacturer Part Number"
+F14 "TEXAS INSTRUMENTS" 0 -1750 50 H I L CNN "Manufacturer"
+F15 "DAC8550IDGK" 0 -1825 50 H I L CNN "Manufacturer Part Number"
 F16 "8" 0 -1900 50 H I L CNN "Pin Count"
 F17 "MSOP8" 0 -1975 50 H I L CNN "Case"
 F18 "Yes" 0 -2050 50 H I L CNN "Mounted"
@@ -172,7 +172,7 @@ F9 "Standard" 0 -3775 50 H I L CNN "Component Type"
 F10 "ADN4600ACPZ" 0 -3850 50 H I L CNN "Device"
 F11 "QFN, 0.50mm Pitch, Square; 64 Pin, 9.00mm L X 9.00mm W X 1.00mm H body (6.15mm X 6.15mm Thermal Tab), IPC Medium Density" 0 -3925 50 H I L CNN "PackageDescription"
 F12 " " 0 -4000 50 H I L CNN "Status"
-F13 "4.25Gbps, 8 × 8, Asynchronous Crosspoint Switch" 0 -4075 50 H I L CNN "Part Description"
+F13 "4.25Gbps, 8 x 8, Asynchronous Crosspoint Switch" 0 -4075 50 H I L CNN "Part Description"
 F14 "ANALOG DEVICES" 0 -4150 50 H I L CNN "Manufacturer"
 F15 "ADN4600ACPZ" 0 -4225 50 H I L CNN "Manufacturer Part Number"
 F16 "65" 0 -4300 50 H I L CNN "Pin Count"
@@ -501,25 +501,25 @@ X VOUT 5 700 200 200 L 40 40 0 0 O
 ENDDRAW
 ENDDEF
 #
-# PCA9555AHF
+# PCAL9555AHF
 #
-DEF PCA9555AHF IC 0 50 Y Y 1 L N
+DEF PCAL9555AHF IC 0 50 Y Y 1 L N
 F0 "IC" 400 50 50 H V C CNN
-F1 "PCA9555AHF" 0 -1975 50 H I L CNN
+F1 "PCAL9555AHF" 0 -1975 50 H I L CNN
 F2 "ICs And Semiconductors SMD:QFN50P400X400X80-25N-S225" 0 -2050 50 H I L CNN
 F3 " " 0 -2125 50 H I L CNN
-F4 "PCA9555AHF" 0 -2200 50 H I L CNN "Part Number"
-F5 "PCA9555AHF" 0 -2275 50 H I L CNN "Library Ref"
+F4 "PCAL9555AHF" 0 -2200 50 H I L CNN "Part Number"
+F5 "PCAL9555AHF" 0 -2275 50 H I L CNN "Library Ref"
 F6 "SchLib\\Analog & Interface.SchLib" 0 -2350 50 H I L CNN "Library Path"
-F7 "PCA9555AHF" 0 -2425 50 H I L CNN "Comment"
+F7 "PCAL9555AHF" 0 -2425 50 H I L CNN "Comment"
 F8 "Standard" 0 -2500 50 H I L CNN "Component Kind"
 F9 "Standard" 0 -2575 50 H I L CNN "Component Type"
-F10 "PCA9555AHF" 0 -2650 50 H I L CNN "Device"
+F10 "PCAL9555AHF" 0 -2650 50 H I L CNN "Device"
 F11 "QFN,0.50mm pitch,square;6 pin X 6 pin,4.10mm X 4.10mm body (w/thermal tab 2.25 X 2.25 mm), IPC Medium Density" 0 -2725 50 H I L CNN "PackageDescription"
 F12 " " 0 -2800 50 H I L CNN "Status"
 F13 "Low-Voltage 16-Bit I2C-bus I/O Port With Interrupt and Weak Pull-Up" 0 -2875 50 H I L CNN "Part Description"
 F14 "NXP SEMICONDUCTORS" 0 -2950 50 H I L CNN "Manufacturer"
-F15 "PCA9555AHF" 0 -3025 50 H I L CNN "Manufacturer Part Number"
+F15 "PCAL9555AHF" 0 -3025 50 H I L CNN "Manufacturer Part Number"
 F16 "25" 0 -3100 50 H I L CNN "Pin Count"
 F17 "QFN24" 0 -3175 50 H I L CNN "Case"
 F18 "Yes" 0 -3250 50 H I L CNN "Mounted"
@@ -571,25 +571,25 @@ X VSS 9 -200 -1600 200 R 60 60 0 1 W
 ENDDRAW
 ENDDEF
 #
-# PI3DBS12212AZBSEX
+# PI3DBS16212ZBBEX
 #
-DEF PI3DBS12212AZBSEX IC 0 50 Y Y 1 L N
+DEF PI3DBS16212ZBBEX IC 0 50 Y Y 1 L N
 F0 "IC" 500 50 50 H V C CNN
-F1 "PI3DBS12212AZBSEX" 0 -1775 50 H I L CNN
+F1 "PI3DBS16212ZBBEX" 0 -1775 50 H I L CNN
 F2 "ICs And Semiconductors SMD:PERICOM_ZBS20" 0 -1850 50 H I L CNN
 F3 " " 0 -1925 50 H I L CNN
-F4 "PI3DBS12212AZBSEX" 0 -2000 50 H I L CNN "Part Number"
-F5 "PI3DBS12212AZBSEX" 0 -2075 50 H I L CNN "Library Ref"
+F4 "PI3DBS16212ZBBEX" 0 -2000 50 H I L CNN "Part Number"
+F5 "PI3DBS16212ZBBEX" 0 -2075 50 H I L CNN "Library Ref"
 F6 "SchLib\\Analog & Interface.SchLib" 0 -2150 50 H I L CNN "Library Path"
-F7 "PI3DBS12212AZBSEX" 0 -2225 50 H I L CNN "Comment"
+F7 "PI3DBS16212ZBBEX" 0 -2225 50 H I L CNN "Comment"
 F8 "Standard" 0 -2300 50 H I L CNN "Component Kind"
 F9 "Standard" 0 -2375 50 H I L CNN "Component Type"
-F10 "PI3DBS12212AZBSEX" 0 -2450 50 H I L CNN "Device"
+F10 "PI3DBS16212ZBBEX" 0 -2450 50 H I L CNN "Device"
 F11 "PERICOM TQFN Code ZBS20, 0.50mm Pitch, Rect.; 20 Pin, 2.50mm L X 4.50mm W X 1.00mm H Body (W/Thermal Tab 1.2mm X 3.2mm)" 0 -2525 50 H I L CNN "PackageDescription"
 F12 "Not Recommended" 0 -2600 50 H I L CNN "Status"
 F13 "3.3V, 1-12Gbps 1-Lane 2:1 Mux/De-Mux Switch" 0 -2675 50 H I L CNN "Part Description"
 F14 "PERICOM" 0 -2750 50 H I L CNN "Manufacturer"
-F15 "PI3DBS12212AZBSEX" 0 -2825 50 H I L CNN "Manufacturer Part Number"
+F15 "PI3DBS16212ZBBEX" 0 -2825 50 H I L CNN "Manufacturer Part Number"
 F16 "21" 0 -2900 50 H I L CNN "Pin Count"
 F17 "TQFN20" 0 -2975 50 H I L CNN "Case"
 F18 "Yes" 0 -3050 50 H I L CNN "Mounted"

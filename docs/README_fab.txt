@@ -8,20 +8,39 @@ PCB fabrication and turn-key assembly:
 Gerber, Drill, IPC-D-356, Board stackup, BoM, and X-Y placement.
 
 The design is created in, and these manufacturing files are mostly
-exported from, KiCad version 5.1.8.
+exported from, KiCad version 6.0.11.
 
-This is a 12-layer, 1.6mm board.  Materials and thicknesses
+This is a 12-layer, 1.72mm (nominal) board.  Materials and thicknesses
 according to the board stackup description:
   marble-stack.txt
 
+Three heat sinks are called out in the BOM and shown on the schematic:
+  HS1  for U1 FPGA
+  HS2  for U35 Power Supply
+  H23  for U2 Clock Mux
+The latter two are stick-on.  HS1 is special: it clips on,
+but requires thermal grease applied between it and the FPGA.
+The hope is that the person assembling it is practiced with heat sinks,
+understands the importance of thermal grease, and has a tube on their shelf.
+Dow 340 seems to be the general-issue grease these days, but any known-good
+thermal grease is acceptable.
+
 Design rules are 0.10 mm space, 0.10 mm trace, 0.152 mm drill
-(0.35mm pad).  The overall board size is 150 mm x 180 mm,
-similar to the AMC double-width standard.
+(0.35mm pad).  Solder mask pad clearance is set to 0.024 mm,
+allowing 0.152 mm soldermask dams between pads that are separated
+by 0.200 mm.
+
+The overall board size is 150 mm x 180 mm, similar to the
+AMC double-width standard.
 
 - PCB Material: FR4
-- Soldermask color: Red
+- Soldermask color: Black
 - Silkscreen color: White
 - Copper weight for inner layers is 0.5 oz and for outer layers is 1oz + 0.5oz = 1.5oz
+
+The SI conversion of the traditional PCB industry unit "1 oz" (really ounce/square-foot)
+is 305.15 g/m^2.  That _might_ convert to 34.15 micrometers layer thickness,
+but only if the copper plating has the density of pure bulk material at 20 C,
 
 Copper Gerber files, in order:
   marble-F_Cu.gbr
